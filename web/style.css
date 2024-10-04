@@ -14,7 +14,6 @@ body {
   animation: rainbow 10s ease infinite;
   */
   animation: rainbow 10s linear infinite;
-
 }
 
 @keyframes rainbow { 
@@ -116,22 +115,13 @@ img#haj {
   filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.5));
 }
 
-@keyframes rainbowAlt { 
-  0%{background-position:0% 82%}
-  50%{background-position:100% 19%}
-  100%{background-position:0% 82%}
-}
-
-/*
-@media screen and (max-width: 768px) {
-  img#haj {
-    width: 90%;
+@media (prefers-reduced-motion) {
+  body {
+    animation: none;
+    background-color: #7facc3;
   }
-  h1 {
-    font-size: 5em;
-  }
-  p {
-    font-size: 2em;
+  #splash {
+    animation: none;
+    transform: rotate(-10deg);
   }
 }
-  */
