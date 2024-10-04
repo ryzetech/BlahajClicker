@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>BLAHAJ CLICKER v2!!!</title>
+  <link rel="stylesheet" type="text/css" href="fontdef.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body onload="splash();">
+  <div class="container">
+    <h1>Blahaj Clicker v2!!!</h1>
+    <span id="splash"><noscript>Enable JS plz!</noscript></span>
+    <noscript>
+      <p>This page requires JavaScript to be enabled.</p>
+      <p>I'm sorry, but those are the rules.</p>
+    </noscript>
+    <img id="haj" src="blahaj.webp" draggable="false" onclick="event.preventDefault(); hajclick();">
+    <p id="counter">Connecting to CountBroker...</p>
+    <p>made by <a href="https://finnley.dev">finnley</a> uwu</p>
+    <span class="aboutButton" onclick="toggleAbout();">About</span>
+  </div>
+
+  <div id="about" style="display:none;">
+    <h2>About</h2>
+
+    <p>Blahaj Clicker was created by <a href="https://finnley.dev">finnley</a> after an idea from <a href="https://skepsiskadser.de">skepsiskadser</a>.</p>
+  </div>
+  <script src="control.js" type="text/javascript"></script>
+  <script type="module">
+    import { rainbowCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+  
+    new rainbowCursor();
+  </script>
+</body>
+</html>

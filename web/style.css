@@ -1,0 +1,137 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: 'LDFComicSans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  /*
+  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 400% 400%;
+  animation: rainbow 10s ease infinite;
+  */
+  animation: rainbow 10s linear infinite;
+
+}
+
+@keyframes rainbow { 
+  0% {
+    background-color: #ff2400;
+  }
+  10% {
+    background-color: #e81d1d;
+  }
+  20% {
+    background-color: #e8b71d;
+  }
+  30% {
+    background-color: #e3e81d;
+  }
+  40% {
+    background-color: #1de840;
+  }
+  50% {
+    background-color: #1ddde8;
+  }
+  80% {
+    background-color: #dd00f3;
+  }
+  100% {
+    background-color: #ff2400;
+  }
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  max-height: 100vh;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+#splash {
+  animation: splash 1s linear infinite;
+  font-size: 1.5em;
+  color: yellow;
+  text-shadow: black 0px 0px 10px;
+  position: relative;
+  top: -50px;
+  left: 200px;
+  display: flex;
+  width: fit-content;
+}
+
+#splash > a {
+  color: yellow;
+}
+
+@keyframes splash {
+  0% {
+    transform: rotate(-10deg) scale(1);
+  }
+  50% {
+    transform: rotate(-10deg) scale(0.9);
+  }
+  100% {
+    transform: rotate(-10deg) scale(1);
+  }
+}
+
+.mono {
+  font-family: monospace;
+}
+
+.aboutButton {
+  font-family: monospace;
+  background-color: rgba(69,69,69,0.69);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#about {
+  text-align: center;
+  width: 70%;
+}
+
+img#haj {
+  top: -50px;
+  width: 35%;
+  flex-grow: 4;
+  touch-action: manipulation;
+  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.5));
+}
+
+@keyframes rainbowAlt { 
+  0%{background-position:0% 82%}
+  50%{background-position:100% 19%}
+  100%{background-position:0% 82%}
+}
+
+/*
+@media screen and (max-width: 768px) {
+  img#haj {
+    width: 90%;
+  }
+  h1 {
+    font-size: 5em;
+  }
+  p {
+    font-size: 2em;
+  }
+}
+  */
