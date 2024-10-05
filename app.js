@@ -3,7 +3,7 @@ import http from 'http';
 import { WebSocketServer } from 'ws';
 import storage from 'node-persist';
 
-const MAX_CLICKS_PER_SECOND = 8;
+const MAX_CLICKS_PER_SECOND = 12;
 let broadcastInterval;
 
 // Initialize node-persist
